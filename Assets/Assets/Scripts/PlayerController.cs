@@ -105,22 +105,9 @@ public class PlayerController : MonoBehaviour
         }
         if (collision.CompareTag("Coin")) 
         {
-            int ran = Random.Range(0, 9);
-            if (ran < 3)
-            {
-                Destroy(collision.gameObject);
-                isGameOver = false;
-                GameManager.instance.GameOver();
-                anim.SetBool("GameOver", true);
-                SceneManager.LoadScene("GameOverScene");
-                DataManager.Instance.FinishGame();
-            }
-            else 
-            {
-                Destroy(collision.gameObject);
-                DataManager.Instance.score += 1000;
-            }
-
+            Destroy(collision.gameObject);
+            DataManager.Instance.score += 500;
+            GameManager.instance.gameSpeed += 1f;
         }
     }
 

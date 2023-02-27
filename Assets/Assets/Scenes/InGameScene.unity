@@ -2961,7 +2961,7 @@ MonoBehaviour:
   - {fileID: 474691757}
   - {fileID: 1879569927}
   jumpHeight: 1
-  jumpSpeed: 11
+  jumpSpeed: 12
 --- !u!1 &1225000912
 GameObject:
   m_ObjectHideFlags: 0
